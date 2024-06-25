@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Keypad">
+
+    <!-- New TextView for "Add Number" -->
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="phone"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAddNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAddNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Add Number"
+        android:visibility="gone"
+        android:textColor="@color/colorTextPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton2"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton3"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="30dp"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
+                    app:layout_constraintStart_toEndOf="@+id/materialButton2"
+                    app:layout_constraintTop_toTopOf="@+id/materialButton2" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton1"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
+                    app:layout_constraintEnd_toStartOf="@+id/materialButton2"
+                    app:layout_constraintTop_toTopOf="@+id/materialButton2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton5"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton6"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="30dp"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/materialButton5"
+                    app:layout_constraintTop_toTopOf="@+id/materialButton5"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton4"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="4"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialButton5"
+                    app:layout_constraintEnd_toStartOf="@+id/materialButton5"
+                    app:layout_constraintTop_toTopOf="@+id/materialButton5"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton8"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton9"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="30dp"
+                    android:text="9"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialButton8"
+                    app:layout_constraintStart_toEndOf="@+id/materialButton8"
+                    app:layout_constraintTop_toTopOf="@+id/materialButton8" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton7"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="7"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialButton8"
+                    app:layout_constraintEnd_toStartOf="@+id/materialButton8"
+                    app:layout_constraintTop_toTopOf="@+id/materialButton8"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButtonsao"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="*"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialButton0"
+                    app:layout_constraintEnd_toStartOf="@+id/materialButton0"
+                    app:layout_constraintTop_toTopOf="@+id/materialButton0" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButtonthang"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="30dp"
+                    android:text="#"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintStart_toEndOf="@+id/materialButton0"
+                    app:layout_constraintTop_toTopOf="@+id/materialButton0" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton0"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButtonback"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="35dp"
+                    android:background="@drawable/baseline_backspace_24"
+                    android:textColor="@color/black"
+                    android:textSize="34dp"
+                    app:backgroundTint="@color/colorTextSecondary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialButtoncall"
+                    app:layout_constraintStart_toEndOf="@+id/materialButtoncall"
+                    app:layout_constraintTop_toTopOf="@+id/materialButtoncall" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButtoncall"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:foreground="@drawable/baseline_call_24"
+                    android:textColor="@color/black"
+                    android:textSize="34dp"
+                    app:backgroundTint="@color/colorTextPrimary"
+                    app:cornerRadius="140dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

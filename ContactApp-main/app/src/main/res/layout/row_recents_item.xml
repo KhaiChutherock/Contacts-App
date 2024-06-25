@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/contact_delete"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:gravity="center"
+            android:background="#F44336"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/calltype_image"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/baseline_call_made_24"
+            />
+
+        <TextView
+            android:id="@+id/textViewCallerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/timecall"
+            android:layout_toEndOf="@+id/calltype_image"
+            android:text="Contact Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/timecall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:text="Today" />
+
+    </RelativeLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
