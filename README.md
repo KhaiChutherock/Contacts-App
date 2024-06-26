@@ -1,0 +1,1 @@
+Ứng dụng quản lý danh bạ trên Android được xây dựng bằng Java và SQLite. Ứng dụng cho phép người dùng tạo, xem, chỉnh sửa, xóa và tìm kiếm các liên hệ, cũng như gọi điện, nhắn tin và thêm liên hệ vào danh sách yêu thích.
